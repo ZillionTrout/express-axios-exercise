@@ -4,7 +4,7 @@ const app = express();
 
 // Iteration 1
 app.get('/pikachu', (req, res, next) => {
-  axios.get('https://pokeapi.co/api/v2/pokemon/pikachu')
+  axios.get('https://pokeapi.co/api/v2/pokemon/pikachu') 
   .then(response => {
     res.status(200).json(response.data);
   })
